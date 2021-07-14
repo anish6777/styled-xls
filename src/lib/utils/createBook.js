@@ -2,6 +2,7 @@ import { json2xml } from "xml-js";
 
 import initialObj from "./../config/initElements.json";
 import Meta from "./../Nodes/Meta";
+import Book from "./../Nodes/Book";
 import { createBody } from "./createBody";
 import { createStyle } from "./createStyle";
 import { createSheet } from "./createSheet";
