@@ -1,0 +1,2547 @@
+
+        {
+            "elements": [
+                {
+                    "type": "element",
+                    "name": "office:settings",
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "config:config-item-set",
+                            "attributes": {
+                                "config:name": "ooo:view-settings"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "VisibleAreaTop",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "VisibleAreaLeft",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "VisibleAreaWidth",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "6768"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "VisibleAreaHeight",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "1354"
+                                        }
+                                    ]
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "config:config-item-set",
+                            "attributes": {
+                                "config:name": "ooo:configuration-settings"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "EmbedComplexScriptFonts",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "EmbedAsianScriptFonts",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "EmbedLatinScriptFonts",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "IsDocumentShared",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "LoadReadonly",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "EmbedOnlyUsedFonts",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "AllowPrintJobCancel",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "UpdateFromTemplate",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "IsKernAsianPunctuation",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "CharacterCompressionType",
+                                        "config:type": "short"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "0"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "EmbedFonts",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "IsSnapToRaster",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "RasterResolutionX",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "1270"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "RasterResolutionY",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "1270"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "HasSheetTabs",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "IsRasterAxisSynchronized",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "ShowPageBreaks",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "ShowGrid",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "ShowNotes",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "ShowZeroValues",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "SaveVersionOnClose",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "GridColor",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "12632256"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "RasterIsVisible",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "PrinterName",
+                                        "config:type": "string"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "LinkUpdateMode",
+                                        "config:type": "short"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "3"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "RasterSubdivisionX",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "HasColumnRowHeaders",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "RasterSubdivisionY",
+                                        "config:type": "int"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "1"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "AutoCalculate",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "PrinterSetup",
+                                        "config:type": "base64Binary"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "IsOutlineSymbolsSet",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "PrinterPaperFromSetup",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "false"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "ApplyUserData",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "config:config-item",
+                                    "attributes": {
+                                        "config:name": "SaveThumbnail",
+                                        "config:type": "boolean"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "true"
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "element",
+                    "name": "office:scripts",
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "office:script",
+                            "attributes": {
+                                "script:language": "ooo:Basic"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "ooo:libraries",
+                                    "attributes": {
+                                        "xmlns:ooo": "http://openoffice.org/2004/office",
+                                        "xmlns:xlink": "http://www.w3.org/1999/xlink"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "element",
+                    "name": "office:font-face-decls",
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "style:font-face",
+                            "attributes": {
+                                "style:name": "Arial",
+                                "svg:font-family": "Arial",
+                                "style:font-family-generic": "swiss",
+                                "style:font-pitch": "variable"
+                            }
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:font-face",
+                            "attributes": {
+                                "style:name": "Liberation Sans",
+                                "svg:font-family": "'Liberation Sans'",
+                                "style:font-family-generic": "swiss",
+                                "style:font-pitch": "variable"
+                            }
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:font-face",
+                            "attributes": {
+                                "style:name": "DejaVu Sans",
+                                "svg:font-family": "'DejaVu Sans'",
+                                "style:font-family-generic": "system",
+                                "style:font-pitch": "variable"
+                            }
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:font-face",
+                            "attributes": {
+                                "style:name": "Tahoma",
+                                "svg:font-family": "Tahoma",
+                                "style:font-family-generic": "system",
+                                "style:font-pitch": "variable"
+                            }
+                        }
+                    ]
+                },
+                {
+                    "type": "element",
+                    "name": "office:styles",
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "style:default-style",
+                            "attributes": {
+                                "style:family": "table-cell"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:paragraph-properties",
+                                    "attributes": {
+                                        "style:tab-stop-distance": "0.5in"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "style:font-name": "Liberation Sans",
+                                        "fo:language": "en",
+                                        "fo:country": "US",
+                                        "style:font-name-asian": "Tahoma",
+                                        "style:language-asian": "zh",
+                                        "style:country-asian": "CN",
+                                        "style:font-name-complex": "DejaVu Sans",
+                                        "style:language-complex": "hi",
+                                        "style:country-complex": "IN"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:number-style",
+                            "attributes": {
+                                "style:name": "N0"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:min-integer-digits": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N121"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:seconds",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N122",
+                                "number:truncate-on-overflow": "false"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:hours"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:seconds",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N123"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:seconds",
+                                    "attributes": {
+                                        "number:style": "long",
+                                        "number:decimal-places": "1"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:number-style",
+                            "attributes": {
+                                "style:name": "N124"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:scientific-number",
+                                    "attributes": {
+                                        "number:decimal-places": "1",
+                                        "loext:min-decimal-places": "1",
+                                        "number:min-integer-digits": "1",
+                                        "number:min-exponent-digits": "1",
+                                        "loext:exponent-interval": "3",
+                                        "loext:forced-exponent-sign": "true"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:date-style",
+                            "attributes": {
+                                "style:name": "N10121",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:month"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "/"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:day"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "/"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:year",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:date-style",
+                            "attributes": {
+                                "style:name": "N10122",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:day"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:month",
+                                    "attributes": {
+                                        "number:textual": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:year"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:date-style",
+                            "attributes": {
+                                "style:name": "N10123",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:day"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:month",
+                                    "attributes": {
+                                        "number:textual": "true"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:date-style",
+                            "attributes": {
+                                "style:name": "N10124",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:month",
+                                    "attributes": {
+                                        "number:textual": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "-"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:year"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N10125",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:hours"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:am-pm"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N10126",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:hours"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:seconds",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:am-pm"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N10127",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:hours"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:time-style",
+                            "attributes": {
+                                "style:name": "N10128",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:hours"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:seconds",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:date-style",
+                            "attributes": {
+                                "style:name": "N10129",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:month"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "/"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:day"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "/"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:year",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:hours"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ":"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:minutes",
+                                    "attributes": {
+                                        "number:style": "long"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:number-style",
+                            "attributes": {
+                                "style:name": "N10130P0",
+                                "style:volatile": "true",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "0",
+                                        "loext:min-decimal-places": "0",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:number-style",
+                            "attributes": {
+                                "style:name": "N10130",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ff0000"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "("
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "0",
+                                        "loext:min-decimal-places": "0",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ")"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:map",
+                                    "attributes": {
+                                        "style:condition": "value()>=0",
+                                        "style:apply-style-name": "N10130P0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:number-style",
+                            "attributes": {
+                                "style:name": "N10131P0",
+                                "style:volatile": "true",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "2",
+                                        "loext:min-decimal-places": "2",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:number-style",
+                            "attributes": {
+                                "style:name": "N10131",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ff0000"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "("
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "2",
+                                        "loext:min-decimal-places": "2",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ")"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:map",
+                                    "attributes": {
+                                        "style:condition": "value()>=0",
+                                        "style:apply-style-name": "N10131P0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10132P0",
+                                "style:volatile": "true",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "0",
+                                        "loext:min-decimal-places": "0",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10132",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "("
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "0",
+                                        "loext:min-decimal-places": "0",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ")"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:map",
+                                    "attributes": {
+                                        "style:condition": "value()>=0",
+                                        "style:apply-style-name": "N10132P0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10133P0",
+                                "style:volatile": "true",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "0",
+                                        "loext:min-decimal-places": "0",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10133",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ff0000"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "("
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "0",
+                                        "loext:min-decimal-places": "0",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ")"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:map",
+                                    "attributes": {
+                                        "style:condition": "value()>=0",
+                                        "style:apply-style-name": "N10133P0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10134P0",
+                                "style:volatile": "true",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "2",
+                                        "loext:min-decimal-places": "2",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10134",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "("
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "2",
+                                        "loext:min-decimal-places": "2",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ")"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:map",
+                                    "attributes": {
+                                        "style:condition": "value()>=0",
+                                        "style:apply-style-name": "N10134P0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10135P0",
+                                "style:volatile": "true",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "2",
+                                        "loext:min-decimal-places": "2",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text"
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "number:currency-style",
+                            "attributes": {
+                                "style:name": "N10135",
+                                "number:language": "en",
+                                "number:country": "US"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ff0000"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": "("
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:currency-symbol"
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:number",
+                                    "attributes": {
+                                        "number:decimal-places": "2",
+                                        "loext:min-decimal-places": "2",
+                                        "number:min-integer-digits": "1",
+                                        "number:grouping": "true"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "number:text",
+                                    "elements": [
+                                        {
+                                            "type": "text",
+                                            "text": ")"
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:map",
+                                    "attributes": {
+                                        "style:condition": "value()>=0",
+                                        "style:apply-style-name": "N10135P0"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Default",
+                                "style:family": "table-cell"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:padding": "0.028in",
+                                        "style:rotation-align": "none"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "style:font-name": "Arial",
+                                        "fo:font-family": "Arial",
+                                        "style:font-family-generic": "swiss",
+                                        "style:font-pitch": "variable",
+                                        "style:font-name-complex": "Arial",
+                                        "style:font-family-complex": "Arial",
+                                        "style:font-family-generic-complex": "swiss",
+                                        "style:font-pitch-complex": "variable"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Heading",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Default"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#000000",
+                                        "fo:font-size": "24pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "bold"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Heading_20_1",
+                                "style:display-name": "Heading 1",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Heading"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#000000",
+                                        "fo:font-size": "18pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Heading_20_2",
+                                "style:display-name": "Heading 2",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Heading"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#000000",
+                                        "fo:font-size": "12pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Text",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Default"
+                            }
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Note",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Text"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#ffffcc",
+                                        "style:diagonal-bl-tr": "none",
+                                        "style:diagonal-tl-br": "none",
+                                        "fo:border": "0.74pt solid #808080"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#333333",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Footnote",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Text"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#808080",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "italic",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Hyperlink",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Text"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#0000ee",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "style:text-underline-style": "solid",
+                                        "style:text-underline-width": "auto",
+                                        "style:text-underline-color": "#0000ee",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Status",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Default"
+                            }
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Good",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Status"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#ccffcc"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#006600",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Neutral",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Status"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#ffffcc"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#996600",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Bad",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Status"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#ffcccc"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#cc0000",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Warning",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Status"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#cc0000",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Error",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Status"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#cc0000"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ffffff",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "bold"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Accent",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Default"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#000000",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "bold"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Accent_20_1",
+                                "style:display-name": "Accent 1",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Accent"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#000000"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ffffff",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Accent_20_2",
+                                "style:display-name": "Accent 2",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Accent"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#808080"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:text-properties",
+                                    "attributes": {
+                                        "fo:color": "#ffffff",
+                                        "fo:font-size": "10pt",
+                                        "fo:font-style": "normal",
+                                        "fo:font-weight": "normal"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:style",
+                            "attributes": {
+                                "style:name": "Accent_20_3",
+                                "style:display-name": "Accent 3",
+                                "style:family": "table-cell",
+                                "style:parent-style-name": "Accent"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:table-cell-properties",
+                                    "attributes": {
+                                        "fo:background-color": "#dddddd"
+                                    }
+                                }
+                            ]
+                        }
+                    ]
+                },
+                {
+                    "type": "element",
+                    "name": "office:master-styles",
+                    "elements": [
+                        {
+                            "type": "element",
+                            "name": "style:master-page",
+                            "attributes": {
+                                "style:name": "Default",
+                                "style:page-layout-name": "pm1"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:header",
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:sheet-name",
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "???"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:header-left",
+                                    "attributes": {
+                                        "style:display": "false"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:footer",
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Page "
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:page-number",
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "1"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:footer-left",
+                                    "attributes": {
+                                        "style:display": "false"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:master-page",
+                            "attributes": {
+                                "style:name": "Report",
+                                "style:page-layout-name": "pm2"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:header",
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "style:region-left",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:p",
+                                                    "elements": [
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:sheet-name",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "???"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:s"
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": "("
+                                                        },
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:title",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "???"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": ")"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        },
+                                        {
+                                            "type": "element",
+                                            "name": "style:region-right",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:p",
+                                                    "elements": [
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:date",
+                                                            "attributes": {
+                                                                "style:data-style-name": "N2",
+                                                                "text:date-value": "2021-07-03"
+                                                            },
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "00/00/0000"
+                                                                }
+                                                            ]
+                                                        },
+                                                        {
+                                                            "type": "text",
+                                                            "text": ", "
+                                                        },
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:time",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "00:00:00"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:header-left",
+                                    "attributes": {
+                                        "style:display": "false"
+                                    }
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:footer",
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "text",
+                                                    "text": "Page "
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:page-number",
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "1"
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:s"
+                                                },
+                                                {
+                                                    "type": "text",
+                                                    "text": "/ "
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:page-count",
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "99"
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:footer-left",
+                                    "attributes": {
+                                        "style:display": "false"
+                                    }
+                                }
+                            ]
+                        },
+                        {
+                            "type": "element",
+                            "name": "style:master-page",
+                            "attributes": {
+                                "style:name": "PageStyle_5f_Sheet1",
+                                "style:display-name": "PageStyle_Sheet1",
+                                "style:page-layout-name": "pm3"
+                            },
+                            "elements": [
+                                {
+                                    "type": "element",
+                                    "name": "style:header",
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:span",
+                                                    "attributes": {
+                                                        "text:style-name": "T1"
+                                                    },
+                                                    "elements": [
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:sheet-name",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "???"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:header-left",
+                                    "attributes": {
+                                        "style:display": "false"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:span",
+                                                    "attributes": {
+                                                        "text:style-name": "T1"
+                                                    },
+                                                    "elements": [
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:sheet-name",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "???"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:footer",
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:span",
+                                                    "attributes": {
+                                                        "text:style-name": "T1"
+                                                    },
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Page "
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:span",
+                                                    "attributes": {
+                                                        "text:style-name": "T1"
+                                                    },
+                                                    "elements": [
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:page-number",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "1"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                },
+                                {
+                                    "type": "element",
+                                    "name": "style:footer-left",
+                                    "attributes": {
+                                        "style:display": "false"
+                                    },
+                                    "elements": [
+                                        {
+                                            "type": "element",
+                                            "name": "text:p",
+                                            "elements": [
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:span",
+                                                    "attributes": {
+                                                        "text:style-name": "T1"
+                                                    },
+                                                    "elements": [
+                                                        {
+                                                            "type": "text",
+                                                            "text": "Page "
+                                                        }
+                                                    ]
+                                                },
+                                                {
+                                                    "type": "element",
+                                                    "name": "text:span",
+                                                    "attributes": {
+                                                        "text:style-name": "T1"
+                                                    },
+                                                    "elements": [
+                                                        {
+                                                            "type": "element",
+                                                            "name": "text:page-number",
+                                                            "elements": [
+                                                                {
+                                                                    "type": "text",
+                                                                    "text": "1"
+                                                                }
+                                                            ]
+                                                        }
+                                                    ]
+                                                }
+                                            ]
+                                        }
+                                    ]
+                                }
+                            ]
+                        }
+                    ]
+                }
+            ]
+        }
