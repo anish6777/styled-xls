@@ -13,7 +13,7 @@ function CellProperties(props) {
 function CellPropertiesAttributes(props = {}) {
   (this["style:glyph-orientation-vertical"] =
     props.glyphOrientationVertical || "0"),
-    (this["fo:background-color"] = props.backgroundColor || "#000000"),
+    (this["fo:background-color"] = props.backgroundColor || "#ffffff"),
     (this["style:diagonal-bl-tr"] = props.diagonalBlTr || "none"),
     (this["style:diagonal-tl-br"] = props.diagonalTlBr || "none"),
     (this["style:text-align-source"] = props.textAlignSource || "fix"),
@@ -50,7 +50,7 @@ function TextProperties(props = {}) {
 }
 
 function TextAttributes(props = {}) {
-  (this["fo:color"] = props.color || "#ffffff"),
+  (this["fo:color"] = props.color || "#000000"),
     (this["style:text-outline"] = props.textOutline || "false"),
     (this["style:text-line-through-style"] =
       props.textLineThroughStyle || "none"),
