@@ -1,9 +1,9 @@
 import { createBook } from "./createBook";
 
-export function convertObjectArray(
+export function createFromObjectArray(
   sheetName = "sheet1",
   obj,
-  tableConfig,
+  tableConfig={},
   columnConfig,
   extraHeaders
 ) {
