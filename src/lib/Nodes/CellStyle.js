@@ -20,7 +20,7 @@ function CellPropertiesAttributes(props = {}) {
     (this["style:repeat-content"] = props.repeatContent || "false"),
     (this["fo:wrap-option"] = props.wrapOption || "no-wrap"),
     (this["fo:border"] =
-      props.border || `"0.06pt solid ${props.borderColor || "#000000"}`),
+      props.border || `"0.06pt solid ${"#"+props.borderColor || "#000000"}`),
     (this["style:direction"] = props.direction || "ltr"),
     (this["fo:padding"] = props.padding || "0.028in"),
     (this["style:rotation-angle"] = props.rotationAngle || "0"),
