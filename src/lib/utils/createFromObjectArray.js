@@ -34,9 +34,9 @@ export function createFromObjectArray(
   }
   sheet.addRow(updatedKeys, tableConfig.headerStyle);
   obj.forEach((el) => {
-    if (config && Array.isArray(config)) {
+    if (columnConfig && Array.isArray(columnConfig)) {
       let updatedValues = [];
-      config.forEach((c) => {
+      columnConfig.forEach((c) => {
         updatedValues.push({
           element: el[c.key],
           style: c.columnStyle,
