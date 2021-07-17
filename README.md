@@ -14,7 +14,11 @@ It has mainly two functions
 
 # Creating excel from object array
 
-## using createFromObjectArray
+We will see how we can create an excel as below from an object array of shape [{"type":"string"},"percentage":"string"]
+
+![alt text](https://github.com/anish6777/styled-xls/blob/images/images/createObjectFromArray.JPG?raw=true)
+
+## Step 1 : create a simple excel download
 
 ```
 import { createFromObjectArray } from "styled-xls";
@@ -35,13 +39,11 @@ const blob = new Blob([result], { type: "application/vnd.ms-excel" });
 saveAs(blob, "child-malnutrition.xlsx");
 
 ```
- ## Adding header and content styles
+ ## Step 2 : Adding header and content styles
  You can pass an object having headerStyle and defaultStyle as third parameter to style the header and default style of all the populated cells
 
  ```
- import { createFromObjectArray } from "styled-xls";
-import { saveAs } from "file-saver";
-const childMalnutrition =[{type:"stunting",percentage:"22"},{type:"wasting",percentage:"6.7"},{type:"overweight",percentage:"5.7"}]
+ //Rest of the code same as in step 1
 
 //create a constant headerStyle with required styles for header
 const headerStyle= {
@@ -61,64 +63,26 @@ const defaultStyle = {
 //pass an object with headerStyle and defaultStyle as the third parameter 
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle})
 
-var result = malnutritionBook.extract();
-
-#extracted xml can be saved in the required formal
-const blob = new Blob([result], { type: "application/vnd.ms-excel" });
-saveAs(blob, "child-malnutrition.xlsx");
+//Rest of the code same as in step 1
  ```
- ## Modifying header values and column styles
+ ## Step 3 - Modifying header values and column styles
 
  ```
- import { createFromObjectArray } from "styled-xls";
-import { saveAs } from "file-saver";
-const childMalnutrition =[{type:"stunting",percentage:"22"},{type:"wasting",percentage:"6.7"},{type:"overweight",percentage:"5.7"}]
-
-const headerStyle= {
-  backgroundColor: "#6A6C6D",
-  color: "#ffffff",
-  fontSize: "9",
-};
-
-const defaultStyle = {
-  backgroundColor: "#f4f5f5",
-  color: "#fff",
-  borderColor:"#6A6C6D",
-  fontSize: "6",
-};
-
+ //Rest of the code same as in step 2
+ 
 const columnConfig=[{key:"type",displayName:"Type"},{key:"percentage",displayName:"Percentage(%)",headerStyle:{backgroundColor:"#0074D9"},columnStyle:{backgroundColor:"#39CCCC"}}]
 
 //Add columnConfig as the fourth parameter
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle},columnConfig)
 
-var result = malnutritionBook.extract();
-
-#extracted xml can be saved in the required formal
-const blob = new Blob([result], { type: "application/vnd.ms-excel" });
-saveAs(blob, "child-malnutrition.xlsx");
+ //Rest of the code same as in step 2
+ 
  ```
 
-  ## Adding merged headers on top of the default header
+  ## Step:4 - Adding merged headers on top of the default header
+
  ```
- import { createFromObjectArray } from "styled-xls";
-import { saveAs } from "file-saver";
-const childMalnutrition =[{type:"stunting",percentage:"22"},{type:"wasting",percentage:"6.7"},{type:"overweight",percentage:"5.7"}]
-
-const headerStyle= {
-  backgroundColor: "#6A6C6D",
-  color: "#ffffff",
-  fontSize: "9",
-};
-
-const defaultStyle = {
-  backgroundColor: "#f4f5f5",
-  color: "#fff",
-  borderColor:"#6A6C6D",
-  fontSize: "6",
-};
-
-const columnConfig=[{key:"type",displayName:"Type"},{key:"percentage",displayName:"Percentage(%)",headerStyle:{backgroundColor:"#0074D9"},columnStyle:{backgroundColor:"#39CCCC"}}]
+ //Rest of the code same as in step 3
 
 #Add extra headers with column span for each column
 #Adding first header
@@ -130,9 +94,5 @@ const extraHeaders=[extraHeader1,extraHeader2]
 #Pass extraHeaders array as the fifth parameter to function
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle},columnConfig,extraHeaders)
 
-var result = malnutritionBook.extract();
-
-#extracted xml can be saved in the required formal
-const blob = new Blob([result], { type: "application/vnd.ms-excel" });
-saveAs(blob, "child-malnutrition.xlsx");
+ //Rest of the code same as in step 3
  ```
