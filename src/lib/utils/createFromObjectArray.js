@@ -14,7 +14,7 @@ export function createFromObjectArray(
       const keyConfig = columnConfig.find((c) => c.key === k);
       if (keyConfig) {
         updatedKeys.push({
-          element: keyConfig.value || k,
+          element: keyConfig.displayName || k,
           style: keyConfig.headerStyle,
         });
       } else {
