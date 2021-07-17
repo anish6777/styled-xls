@@ -68,3 +68,71 @@ const blob = new Blob([result], { type: "application/vnd.ms-excel" });
 saveAs(blob, "child-malnutrition.xlsx");
  ```
  ## Modifying header values and column styles
+
+ ```
+ import { createFromObjectArray } from "styled-xls";
+import { saveAs } from "file-saver";
+const childMalnutrition =[{type:"stunting",percentage:"22"},{type:"wasting",percentage:"6.7"},{type:"overweight",percentage:"5.7"}]
+
+const headerStyle= {
+  backgroundColor: "#6A6C6D",
+  color: "#ffffff",
+  fontSize: "9",
+};
+
+const defaultStyle = {
+  backgroundColor: "#f4f5f5",
+  color: "#fff",
+  borderColor:"#6A6C6D",
+  fontSize: "6",
+};
+
+const columnConfig=[{key:"type",displayName:"Type"},{key:"percentage",displayName:"Percentage(%)",headerStyle:{backgroundColor:"#0074D9"},columnStyle:{backgroundColor:"#39CCCC"}}]
+
+//Add columnConfig as the fourth parameter
+const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle},columnConfig)
+
+var result = malnutritionBook.extract();
+
+#extracted xml can be saved in the required formal
+const blob = new Blob([result], { type: "application/vnd.ms-excel" });
+saveAs(blob, "child-malnutrition.xlsx");
+ ```
+
+  ## Adding merged headers on top of the default header
+ ```
+ import { createFromObjectArray } from "styled-xls";
+import { saveAs } from "file-saver";
+const childMalnutrition =[{type:"stunting",percentage:"22"},{type:"wasting",percentage:"6.7"},{type:"overweight",percentage:"5.7"}]
+
+const headerStyle= {
+  backgroundColor: "#6A6C6D",
+  color: "#ffffff",
+  fontSize: "9",
+};
+
+const defaultStyle = {
+  backgroundColor: "#f4f5f5",
+  color: "#fff",
+  borderColor:"#6A6C6D",
+  fontSize: "6",
+};
+
+const columnConfig=[{key:"type",displayName:"Type"},{key:"percentage",displayName:"Percentage(%)",headerStyle:{backgroundColor:"#0074D9"},columnStyle:{backgroundColor:"#39CCCC"}}]
+
+#Add extra headers with column span for each column
+#Adding first header
+const extraHeader1 = {elements:[{element:"Source: UNICEF ",columnSpan:2,style:{backgroundColor: "#6A6C6D",color: "#ffffff"}}]}
+#Adding second header
+const extraHeader2 = {elements:[{element:"Malnutrition data",columnSpan:2,style:{backgroundColor: "#6A6C6D",color: "#ffffff"}}]}
+const extraHeaders=[extraHeader1,extraHeader2]
+
+#Pass extraHeaders array as the fifth parameter to function
+const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle},columnConfig,extraHeaders)
+
+var result = malnutritionBook.extract();
+
+#extracted xml can be saved in the required formal
+const blob = new Blob([result], { type: "application/vnd.ms-excel" });
+saveAs(blob, "child-malnutrition.xlsx");
+ ```
