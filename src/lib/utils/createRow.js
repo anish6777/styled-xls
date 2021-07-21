@@ -1,5 +1,6 @@
 import Row from "./../Nodes/Row";
 import Cell from "./../Nodes/Cell";
+import CoveredCell from "./../Nodes/CoveredCell";
 import CellStyle from "./../Nodes/CellStyle";
 
 export function createRow(name, cells = [], rowNum) {
@@ -16,6 +17,11 @@ export function createRow(name, cells = [], rowNum) {
     output.elements.push(
       new Cell(cell, styleName || cellStyleName || name, columnSpan)
     );
+    if(columnSpan > 1){
+      output.elements.push(
+        new CoveredCell(styleName || cellStyleName || name, columnSpan)
+      );
+    }
     return { styles: cellStyles };
   };
   if (Array.isArray(cells)) {

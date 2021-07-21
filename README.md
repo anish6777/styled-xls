@@ -1,6 +1,6 @@
 # styled-xls
 
-JS libeary to create xls/xlsx with style.
+JS library to create xls/xlsx with style.
 
 A 50KB JS library which helps to create XLSX files with styles.
 
@@ -14,7 +14,7 @@ It has mainly two functions
 
 # Creating XLSX file from object array
 
-We will see how we can create an XLSX file as below from an object array of shape [{"type":"string"},"percentage":"string"]
+We will see how we can create an XLSX file as below from an object array of shape [{"key1":"value1","key2":"value2"}]
 
 ![alt text](https://github.com/anish6777/styled-xls/blob/images/images/createObjectFromArray.JPG?raw=true)
 
@@ -147,7 +147,7 @@ const data = [
   ["Default","Color","here"]
 ]
  
- #pass the default style as third argument to addSheet
+//pass the default style as third argument to addSheet
  book.addSheet("Colors",data,defaultGreyStyle)
  //Rest of the code same as in step 1
 ```
