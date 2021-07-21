@@ -34,7 +34,7 @@ const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutri
 //After the book is created you can extract the xml using the below function
 const result = malnutritionBook.extract();
 
-#extracted xml can be saved in the required formal
+//extracted xml can be saved in the required formal
 const blob = new Blob([result], { type: "application/vnd.ms-excel" });
 saveAs(blob, "child-malnutrition.xlsx");
 
@@ -127,7 +127,7 @@ book.addSheet("Colors",data)
 // After the sheet is added you can extract the xml using the below function
 const result = colorBook.extract();
 
-#extracted xml can be saved in the required formal
+//extracted xml can be saved in the required formal
 const blob = new Blob([result], { type: "application/vnd.ms-excel" });
 saveAs(blob, "color-table.xlsx");
 

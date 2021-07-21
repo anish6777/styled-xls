@@ -1,6 +1,6 @@
 {
   "name": "styled-xls",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Library to create XLS/XLSX documents with styles",
   "main": "dist/styled-xls.js",
   "module": "dist/styled-xls.js",
@@ -22,7 +22,10 @@
     "style",
     "xls",
     "merge",
-    "excel"
+    "excel",
+    "merge cells",
+    "convert",
+    "download"
   ],
   "author": "Anish Antony",
   "license": "MIT",
