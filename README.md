@@ -185,7 +185,7 @@ const greenStyle= {backgroundColor: "#00FF00"}
 
 //Create cells with style as below
 const yellowCell = {element:"Yellow",style:yellowStyle}
-const blueCell = {element:"Blue",style:blueStyle}
+const blueCell = {element:"Blue",style:blueStyle,columnSpan:3}
 const greenCell = {element:"Green",style:greenStyle}
 
 const data = [
