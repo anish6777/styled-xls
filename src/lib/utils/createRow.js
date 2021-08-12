@@ -3,8 +3,8 @@ import Cell from "./../Nodes/Cell";
 import CoveredCell from "./../Nodes/CoveredCell";
 import CellStyle from "./../Nodes/CellStyle";
 
-export function createRow(name, cells = [], rowNum) {
-  const output = new Row([], name);
+export function createRow(name, cells = [], rowNum,rowSpan) {
+  const output = new Row([], name,rowSpan);
   const styles = [];
   const addCell = (cell, style, cellStyleName, columnSpan) => {
     let styleName;

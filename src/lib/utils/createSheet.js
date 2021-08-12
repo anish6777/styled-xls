@@ -5,7 +5,7 @@ import { createRow } from "./createRow";
 export function createSheet(name, content = []) {
   const output = new Sheet(name, []);
   const styles = [];
-  const addRow = (row, style, rowStyleName) => {
+  const addRow = (row, style, rowStyleName,rowSpan=1) => {
     let styleName;
     const newRowStyles = [];
     if (style) {
@@ -16,7 +16,8 @@ export function createSheet(name, content = []) {
     const newRow = createRow(
       styleName || rowStyleName || name,
       row,
-      output.elements.length
+      output.elements.length,
+      rowSpan
     );
     output.elements.push(newRow.output);
     newRowStyles.push(...newRow.styles);
