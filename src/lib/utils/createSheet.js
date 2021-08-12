@@ -35,7 +35,7 @@ export function createSheet(name, content = []) {
           const rowStyle = new CellStyle(rowStyleName, c.style);
           styles.push(rowStyle);
         }
-        addRow(c.elements, null, rowStyleName);
+        addRow(c.elements, null, rowStyleName,c.rowSpan);
       }
     });
   }

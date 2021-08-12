@@ -27,8 +27,8 @@ export function createBook() {
     if (autStyle && autStyle.addStyles) {
       autStyle.addStyles(sheet.styles);
     }
-    const addRow = (inp, style) => {
-      const addedRow = sheet.addRow(inp, style);
+    const addRow = (inp, style,rowSpan) => {
+      const addedRow = sheet.addRow(inp, style,rowSpan);
       autStyle.addStyles(addedRow.styles);
       const addCell = (cellInp, cellStyle) => {
         const addedCell = addedRow.addCell(cellInp, cellStyle);
