@@ -6,7 +6,7 @@ import CellStyle from "./../Nodes/CellStyle";
 export function createRow(name, cells = [], rowNum,rowSpan) {
   const output = new Row([], name,rowSpan);
   const styles = [];
-  const addCell = (cell, style, cellStyleName, columnSpan) => {
+  const addCell = (cell, style, cellStyleName, columnSpan,rowSpanC) => {
     let styleName;
     let cellStyles = [];
     if (style) {
@@ -15,7 +15,7 @@ export function createRow(name, cells = [], rowNum,rowSpan) {
       cellStyles.push(cellStyle);
     }
     output.elements.push(
-      new Cell(cell, styleName || cellStyleName || name, columnSpan)
+      new Cell(cell, styleName || cellStyleName || name, columnSpan,rowSpan||rowSpanC||1)
     );
     if(columnSpan > 1){
       output.elements.push(

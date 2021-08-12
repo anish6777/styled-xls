@@ -1,9 +1,9 @@
 import CellAttribute from "./CellAttribute";
 
-function Cell(value, styleName, colSpan, type) {
+function Cell(value, styleName, colSpan, rowSpan,type) {
   this.type = "element";
   this.name = "table:table-cell";
-  this.attributes = new CellAttribute(value, styleName, colSpan, type);
+  this.attributes = new CellAttribute(value, styleName, colSpan,rowSpan, type);
   this.elements = [
     {
       type: "element",
