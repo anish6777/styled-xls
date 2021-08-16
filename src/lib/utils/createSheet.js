@@ -20,6 +20,15 @@ export function createSheet(name, content = []) {
       rowSpan
     );
     output.elements.push(newRow.output);
+    if(rowSpan > 1){
+      for(i=1;i<rowSpan;i++){
+        const newCoveredRow = createRow(
+          styleName || rowStyleName || name,[]
+        );
+        newCoveredRow.addCoveredCell()
+        output.elements.push(newCoveredRow.output);
+      }
+    }
     newRowStyles.push(...newRow.styles);
     styles.push(...newRowStyles);
     return { styles: newRowStyles, addCell: newRow.addCell };

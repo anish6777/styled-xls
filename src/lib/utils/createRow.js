@@ -24,6 +24,19 @@ export function createRow(name, cells = [], rowNum,rowSpan) {
     }
     return { styles: cellStyles };
   };
+  const addCoveredCell = (cell, style, cellStyleName) => {
+    let styleName;
+    let cellStyles = [];
+    if (style) {
+      styleName = `${name}R${rowNum}C${output.elements.length}`;
+      const cellStyle = new CellStyle(styleName, style);
+      cellStyles.push(cellStyle);
+    }
+      output.elements.push(
+        new CoveredCell(styleName || cellStyleName || name)
+      );
+    return { styles: cellStyles };
+  };
   if (Array.isArray(cells)) {
     cells.forEach((c, i) => {
       if (c && c.element) {
@@ -39,5 +52,5 @@ export function createRow(name, cells = [], rowNum,rowSpan) {
       }
     });
   }
-  return { output, addCell, styles };
+  return { output, addCell,addCoveredCell,styles };
 }
