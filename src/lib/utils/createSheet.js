@@ -21,7 +21,7 @@ export function createSheet(name, content = []) {
     );
     output.elements.push(newRow.output);
     if(rowSpan > 1){
-      for(i=1;i<rowSpan;i++){
+      for(let i=1;i<rowSpan;i++){
         const newCoveredRow = createRow(
           styleName || rowStyleName || name,[]
         );
