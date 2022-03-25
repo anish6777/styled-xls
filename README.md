@@ -5,6 +5,7 @@ JS library to create xls/xlsx with style.
 A 50KB JS library which helps to create XLSX files with styles.
 
 It has mainly two functions
+
 - createFromObjectArray - to convert object arrays directly to xls/xlsx
 - createBook - to convert two dimensional arrays to XLSX file
 
@@ -31,58 +32,56 @@ const childMalnutrition =[{type:"stunting",percentage:"22"},{type:"wasting",perc
 //You can create the book by passing sheet name and object array to be converted
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition)
 
-//After the book is created you can extract the xml using the below function
-const result = malnutritionBook.extract();
-
-//extracted xml can be saved in the required formal
-const blob = new Blob([result], { type: "application/vnd.ms-excel" });
-saveAs(blob, "child-malnutrition.xlsx");
+saveAs(malnutritionBook, "child-malnutrition.xls");
 
 ```
- ## Step 2 : Adding header and content styles
- You can pass an object having headerStyle and defaultStyle as third parameter to style the header and default style of all the populated cells
 
- ```
- //Rest of the code same as in step 1
+## Step 2 : Adding header and content styles
+
+You can pass an object having headerStyle and defaultStyle as third parameter to style the header and default style of all the populated cells
+
+```
+//Rest of the code same as in step 1
 
 //create a constant headerStyle with required styles for header
 const headerStyle= {
-  backgroundColor: "#6A6C6D",
-  color: "#ffffff",
-  fontSize: "9",
+ backgroundColor: "#6A6C6D",
+ color: "#ffffff",
+ fontSize: "9",
 };
 
 //create a constant defaultStyle with default styles for the all the cells with content
 const defaultStyle = {
-  backgroundColor: "#f4f5f5",
-  color: "#fff",
-  borderColor:"#6A6C6D",
-  fontSize: "6",
+ backgroundColor: "#f4f5f5",
+ color: "#fff",
+ borderColor:"#6A6C6D",
+ fontSize: "6",
 };
 
-//pass an object with headerStyle and defaultStyle as the third parameter 
+//pass an object with headerStyle and defaultStyle as the third parameter
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle})
 
 //Rest of the code same as in step 1
- ```
- ## Step 3 - Modifying header values and column styles
+```
 
- ```
- //Rest of the code same as in step 2
- 
+## Step 3 - Modifying header values and column styles
+
+```
+//Rest of the code same as in step 2
+
 const columnConfig=[{key:"type",displayName:"Type"},{key:"percentage",displayName:"Percentage(%)",headerStyle:{backgroundColor:"#0074D9"},columnStyle:{backgroundColor:"#39CCCC"}}]
 
 //Add columnConfig as the fourth parameter
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle},columnConfig)
 
- //Rest of the code same as in step 2
- 
- ```
+//Rest of the code same as in step 2
 
-  ## Step:4 - Adding merged headers on top of the default header
+```
 
- ```
- //Rest of the code same as in step 3
+## Step:4 - Adding merged headers on top of the default header
+
+```
+//Rest of the code same as in step 3
 
 //Add extra headers with column span for each column
 //Adding first header
@@ -94,23 +93,22 @@ const extraHeaders=[extraHeader1,extraHeader2]
 //Pass extraHeaders array as the fifth parameter to function
 const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutrition,{headerStyle,defaultStyle},columnConfig,extraHeaders)
 
- //Rest of the code same as in step 3
- ```
+//Rest of the code same as in step 3
+```
 
- # Creating XLSX file from two dimensional array
+# Creating XLSX file from two dimensional array
 
 We will see how we can create an XLSX file as below from a two dimensional array
 
 ![alt text](https://github.com/anish6777/styled-xls/blob/images/images/createBook.JPG?raw=true)
 
 ## Step 1 : create a simple XLSX file download
+
 ```
 import { createBook } from "styled-xls";
 import { saveAs } from "file-saver";
 
 
-//You can create the book by passing sheet name and object array to be converted
-const colorBook = createBook();
 
 //create a 2D array with required data
 
@@ -120,19 +118,16 @@ const data = [
   ["Default","Color","here"]
 ]
 
-//Add sheet to book using addSheet function
+const colorBook = createBook("colorbook",data,defaultStyle);
 
-book.addSheet("Colors",data)
-
-// After the sheet is added you can extract the xml using the below function
-const result = colorBook.extract();
 
 //extracted xml can be saved in the required formal
-const blob = new Blob([result], { type: "application/vnd.ms-excel" });
-saveAs(blob, "color-table.xlsx");
+saveAs(colorBook, "color-table.xls");
 
 ```
+
 ## Step 2 : Adding default style to contents
+
 ```
  //Rest of the code same as in step 1
 
@@ -146,12 +141,13 @@ const data = [
   ["This","is","red"],
   ["Default","Color","here"]
 ]
- 
-//pass the default style as third argument to addSheet
- book.addSheet("Colors",data,defaultGreyStyle)
+
+const colorBook = createBook("colorbook",data,defaultGreyStyle);
  //Rest of the code same as in step 1
 ```
+
 ## Step 3 : Adding style to a row
+
 ```
  //Rest of the code same as in step 2
 
@@ -172,9 +168,10 @@ const data = [
 ]
 
  //Rest of the code same as in step 2
- ```
+```
 
- ## Step 4 : Adding style to a cell
+## Step 4 : Adding style to a cell
+
 ```
  //Rest of the code same as in step 3
 
@@ -195,4 +192,4 @@ const data = [
 ]
 
  //Rest of the code same as in step 3
- ```
+```
