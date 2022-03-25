@@ -109,7 +109,7 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
     wrapText:stylesInp.headerStyle.wrapText||"1",
   }
     const headerStyle= createStyle("headercell",null,headerFontStyles,headerInteriorStyles,null,headerAlignment,headerBorder);
-    allstylesInp.push.apply(allStyles,headerStyle)
+    allStyles.push.apply(allStyles,headerStyle)
   }
   function addStyle(name,newStyles={}){
     const newFontStyles ={
@@ -142,7 +142,7 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
     const newDateStyle= createStyle(name+"date",name,null,null,"yyyy-mm-dd");
     const mergedStyles =[...newStyle,...newIntStyle,...newFloatStyle,...newDateStyle];
     if(Array.isArray(allStyles)){
-      allstylesInp.push.apply(allStyles,mergedStyles)
+      allStyles.push.apply(allStyles,mergedStyles)
     }
   }
   return {styles:allStyles,addStyle}
