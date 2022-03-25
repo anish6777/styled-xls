@@ -1,52 +1,26 @@
-import Sheet from "./../Nodes/Sheet";
-import CellStyle from "./../Nodes/CellStyle";
-import { createRow } from "./createRow";
+import createWorkbookFromArray from './createWorkbookFromArray';
+import createWorkbook from './createWorkbook';
 
-export function createSheet(name, content = []) {
-  const output = new Sheet(name, []);
-  const styles = [];
-  const addRow = (row, style, rowStyleName,rowSpan=1) => {
-    let styleName;
-    const newRowStyles = [];
-    if (style) {
-      styleName = rowStyleName || `${name}R${output.elements.length}`;
-      const rowStyle = new CellStyle(styleName, style);
-      newRowStyles.push(rowStyle);
-    }
-    const newRow = createRow(
-      styleName || rowStyleName || name,
-      row,
-      output.elements.length,
-      rowSpan
-    );
-    output.elements.push(newRow.output);
-    if(rowSpan > 1){
-      for(let i=1;i<rowSpan;i++){
-        const newCoveredRow = createRow(
-          styleName || rowStyleName || name,[]
-        );
-        newCoveredRow.addCoveredCell()
-        output.elements.push(newCoveredRow.output);
-      }
-    }
-    newRowStyles.push(...newRow.styles);
-    styles.push(...newRowStyles);
-    return { styles: newRowStyles, addCell: newRow.addCell };
-  };
-  if (Array.isArray(content)) {
-    content.forEach((c, i) => {
-      if (Array.isArray(c)) {
-        addRow(c);
-      } else if (c && c.elements) {
-        let rowStyleName;
-        if (c.style) {
-          rowStyleName = `${name}R${i}`;
-          const rowStyle = new CellStyle(rowStyleName, c.style);
-          styles.push(rowStyle);
-        }
-        addRow(c.elements, null, rowStyleName,c.rowSpan);
-      }
-    });
-  }
-  return { output, addRow, styles };
+function createStyleXML(styleList){
+  return '<Styles>'.concat(...styleList,"</Styles>")
 }
+
+function createsheet (title,inp,styles={},headers,extraHeaders,lastRow,fromArr=false) {
+  const allStyles = Styles(styles,!fromArr);
+  const worksheet = fromArr ? createWorkbookFromArray(inp, title,allStyles.addStyle) : createWorkbook(inp,title,headers,allStyles.addStyle,lastRow,extraHeaders) ;
+  const workSheetHeader = `<?xml version="1.0"?>
+  <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
+  <DocumentProperties xmlns="urn:schemas-microsoft-com:office:office"><Title>${title}</Title></DocumentProperties>
+  <OfficeDocumentSettings xmlns="urn:schemas-microsoft-com:office:office"><AllowPNG/></OfficeDocumentSettings>
+  <ExcelWorkbook xmlns="urn:schemas-microsoft-com:office:excel">
+  <WindowHeight>${worksheet.height}</WindowHeight>
+  <WindowWidth>${worksheet.width}</WindowWidth>
+  <ProtectStructure>False</ProtectStructure>
+  <ProtectWindows>False</ProtectWindows>
+  </ExcelWorkbook>`
+  const stylesXML = createStyleXML(allStyles.styles);
+  const sheet = workSheetHeader + stylesXML + worksheet.xml + "</Workbook>";
+  return sheet;
+}
+
+export default createsheet;

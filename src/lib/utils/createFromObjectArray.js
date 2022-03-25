@@ -1,52 +1,13 @@
-import { createBook } from "./createBook";
+import createsheet from './createsheet';
+import dataURItoBlob from './dataURItoBlob';
 
-export function createFromObjectArray(
-  sheetName = "sheet1",
-  obj,
-  tableConfig={},
-  columnConfig,
-  extraHeaders
-) {
-  const keys = Array.isArray(obj) && obj.length > 0 ? Object.keys(obj[0]) : [];
-  let updatedKeys = [];
-  keys.forEach((k) => {
-    if (columnConfig && Array.isArray(columnConfig)) {
-      const keyConfig = columnConfig.find((c) => c.key === k);
-      if (keyConfig) {
-        updatedKeys.push({
-          element: keyConfig.displayName || k,
-          style: keyConfig.headerStyle,
-        });
-      } else {
-        updatedKeys.push(k);
-      }
-    } else {
-      updatedKeys.push(k);
-    }
-  });
-
-  const book1 = createBook(true);
-  const sheet = book1.addSheet(sheetName, [], tableConfig.defaultStyle);
-  if (extraHeaders && Array.isArray(extraHeaders)) {
-    extraHeaders.forEach((el) => {
-      sheet.addRow(el.elements, el.Style);
-    });
+function createFromObjectArray(title,data,style,columnConfig,extraHeaders,lastRow){
+  const book =createsheet(title,data,style,columnConfig,extraHeaders,lastRow);
+  let bookBuffer = new Buffer(book);
+  let uri = 'data:application/vnd.ms-excel;base64,'
+  let base64String = bookBuffer.toString('base64');
+  const blob = dataURItoBlob(uri+base64String);
+  return blob;
   }
-  sheet.addRow(updatedKeys, tableConfig.headerStyle);
-  obj.forEach((el) => {
-    if (columnConfig && Array.isArray(columnConfig)) {
-      let updatedValues = [];
-      columnConfig.forEach((c) => {
-        updatedValues.push({
-          element: el[c.key],
-          style: c.columnStyle,
-        });
-      });
-      sheet.addRow(updatedValues);
-    } else {
-      const values = Object.values(el);
-      sheet.addRow(values);
-    }
-  });
-  return book1;
-}
+
+export default createFromObjectArray;
