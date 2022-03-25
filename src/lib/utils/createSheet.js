@@ -1,12 +1,13 @@
 import createWorkbookFromArray from './createWorkbookFromArray';
 import createWorkbook from './createWorkbook';
+import createStyles from './Styles';
 
 function createStyleXML(styleList){
   return '<Styles>'.concat(...styleList,"</Styles>")
 }
 
 function createsheet (title,inp,styles={},headers,extraHeaders,lastRow,fromArr=false) {
-  const allStyles = Styles(styles,!fromArr);
+  const allStyles = createStyles(styles,!fromArr);
   const worksheet = fromArr ? createWorkbookFromArray(inp, title,allStyles.addStyle) : createWorkbook(inp,title,headers,allStyles.addStyle,lastRow,extraHeaders) ;
   const workSheetHeader = `<?xml version="1.0"?>
   <Workbook xmlns="urn:schemas-microsoft-com:office:spreadsheet" xmlns:o="urn:schemas-microsoft-com:office:office" xmlns:x="urn:schemas-microsoft-com:office:excel" xmlns:ss="urn:schemas-microsoft-com:office:spreadsheet" xmlns:html="http://www.w3.org/TR/REC-html40">
