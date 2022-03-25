@@ -113,27 +113,27 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
   }
   function addStyle(name,newStyles={}){
     const newFontStyles ={
-      name:newstylesInp.fontName,
-      family:newstylesInp.fontFamily,
-      weight:newstylesInp.fontWeight,
-      size:newstylesInp.fontSize,
-      color:newstylesInp.color||newstylesInp.fontColor
+      name:newStyles.fontName,
+      family:newStyles.fontFamily,
+      weight:newStyles.fontWeight,
+      size:newStyles.fontSize,
+      color:newStyles.color||newStyles.fontColor
     }
     const newInteriorStyles={
-      color:newstylesInp.backgroundColor||"#A3C9F1",
-      pattern:newstylesInp.pattern||"Solid"
+      color:newStyles.backgroundColor||"#A3C9F1",
+      pattern:newStyles.pattern||"Solid"
     }
 
     const newBorderStyle={
       type:["Top","Bottom","Right","Left"],
-      styles:{color:newstylesInp.borderColor||"#000000"},
+      styles:{color:newStyles.borderColor||"#000000"},
     } 
 
     
   const newAlignmentStyles={
-    vertical:newstylesInp.verticalAlignment,
-    horizontal:newstylesInp.horizontalAlignment,
-    wrapText:newstylesInp.wrapText,
+    vertical:newStyles.verticalAlignment,
+    horizontal:newStyles.horizontalAlignment,
+    wrapText:newStyles.wrapText,
   }
     
     const newStyle=createStyle(name,null,newFontStyles,newInteriorStyles,null,newAlignmentStyles,newBorderStyle);
