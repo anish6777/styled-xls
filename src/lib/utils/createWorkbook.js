@@ -1,5 +1,6 @@
 import createRowFromArray from "./createRowFromArray";
 import createRowFromObject from "./createRowFromObject";
+import createWorksheetHeader from "./createWorksheetHeader";
 import {worksheetFooter} from "./constants";
 
 function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
@@ -76,7 +77,7 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
 
   let numGridRows =  inp.length + 2;
 
-  let worksheet = worksheetHeader(title,visibleColumnCount,numGridRows,colXml,headerXml);
+  let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml,headerXml);
 
   for (let i=0; i < inp.length; i++) {
     console.log("row",i)

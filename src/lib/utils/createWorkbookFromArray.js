@@ -1,4 +1,5 @@
 import createRowFromArray from "./createRowFromArray";
+import createWorksheetHeader from "./createWorksheetHeader";
 import {worksheetFooter} from "./constants";
 
 function createWorkbookFromArr(inp, title,addStyle) {
@@ -25,7 +26,7 @@ function createWorkbookFromArr(inp, title,addStyle) {
   };
   let numGridRows =  inp.length + 2;
 
-  let worksheet = worksheetHeader(title,visibleColumnCount,numGridRows,colXml);
+  let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml);
   for (let i=0; i < inp.length; i++) {
     console.log("row",i)
       let styleName = (i%2 === 1) ? 'zebra' : 'default';
