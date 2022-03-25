@@ -12,12 +12,9 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
     visibleColumnCount=headers.length;
     for (let i = 0; i < headers.length; i++) {
       const currentHeader = headers[i];
-      console.log("i",i)
-      console.log("currentHeader",currentHeader)
         if (currentHeader){
             const width = currentHeader.width;
             totalWidth += width;
-            console.log("totalWidth",totalWidth)
             if(currentHeader.headerStyle){
               addStyle((currentHeader.key||"")+"ColumnHeader",currentHeader.headerStyle);
             } 
@@ -39,19 +36,15 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
     const keys = Object.keys(inp[0]);
     for (let i = 0; i < keys.length; i++) {
       const currentHeader = keys[i];
-      console.log("i",i)
         if (currentHeader){
             const width = 90;
             totalWidth += width;
-            console.log("totalWidth",totalWidth)
                 colXml += '<Column ss:AutoFitWidth="1" ss:Width="' + width + '" />';
                 headerXml += `<Cell ss:StyleID="headercell">` +
                     '<Data ss:Type="String">' + currentHeader + '</Data>' +
                     '<NamedCell ss:Name="Header_Texts"></NamedCell></Cell>';
         }
     }
-
-  console.log("keys",keys)
   }
   headerXml += '</Row>'
   
@@ -80,7 +73,6 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
   let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml,headerXml);
 
   for (let i=0; i < inp.length; i++) {
-    console.log("row",i)
       let styleName = (i%2 === 1) ? 'zebra' : 'default';
       let currentRow = inp[i];
       const newRow = createRowFromObject(currentRow,headers,styleName)
@@ -93,12 +85,6 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
     const lastRowXml = createRowFromArray(lastRow.elements,lastRow.style ? "lastRow":"default",addStyle);
     worksheet += lastRowXml;
   }
-
-
-  
-  console.log("t",worksheet)
-
-
   sheet.xml = worksheet+worksheetFooter;
   return sheet;
 }

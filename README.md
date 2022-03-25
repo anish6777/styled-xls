@@ -1,13 +1,15 @@
 # styled-xls
 
-JS library to create xls/xlsx with style.
+JS library to create xls with style.
 
-A 50KB JS library which helps to create XLSX files with styles.
+A 14KB JS library which helps to create XLSX files with styles.
 
-It has mainly two functions
+It has mainly four functions
 
-- createFromObjectArray - to convert object arrays directly to xls/xlsx
-- createBook - to convert two dimensional arrays to XLSX file
+- createFromObjectArray - to convert object arrays directly to xls
+- createBook - to convert two dimensional arrays to xls file
+- createFromObjectArrayURI - to convert object arrays directly to xls dataURI
+- createBookURI - to convert two dimensional arrays to xls dataURI
 
 # Installation and Setup Instructions
 

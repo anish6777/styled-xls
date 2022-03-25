@@ -1,6 +1,5 @@
 
 function createBorders(positions=["Left","Right","Bottom","Top"],borderStyles={},defaultStyles={}){
-  console.log("borderStyles",borderStyles)
   const borders=[];
   borders.push('<Borders>');
   if(positions && Array.isArray(positions)){

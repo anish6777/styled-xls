@@ -11,11 +11,9 @@ function createWorkbookFromArr(inp, title,addStyle) {
     visibleColumnCount = keys.length;
     for (let i = 0; i < keys.length; i++) {
       const currentHeader = keys[i];
-      console.log("i",i)
         if (currentHeader){
             const width = 90;
             totalWidth += width;
-            console.log("totalWidth",totalWidth)
                 colXml += '<Column ss:AutoFitWidth="1" ss:Width="' + width + '" />';
         }
       }
@@ -28,7 +26,6 @@ function createWorkbookFromArr(inp, title,addStyle) {
 
   let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml);
   for (let i=0; i < inp.length; i++) {
-    console.log("row",i)
       let styleName = (i%2 === 1) ? 'zebra' : 'default';
       let currentRow = inp[i];
       if(currentRow.style){

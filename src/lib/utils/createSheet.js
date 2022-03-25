@@ -6,7 +6,7 @@ function createStyleXML(styleList){
   return '<Styles>'.concat(...styleList,"</Styles>")
 }
 
-function createsheet (title,inp,styles={},headers,extraHeaders,lastRow,fromArr=false) {
+function createsheet (title,inp,styles={defaultStyle:{},headerStyle:{}},headers,extraHeaders,lastRow,fromArr=false) {
   const allStyles = createStyles(styles,!fromArr);
   const worksheet = fromArr ? createWorkbookFromArray(inp, title,allStyles.addStyle) : createWorkbook(inp,title,headers,allStyles.addStyle,lastRow,extraHeaders) ;
   const workSheetHeader = `<?xml version="1.0"?>
