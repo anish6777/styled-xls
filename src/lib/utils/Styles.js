@@ -59,14 +59,14 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
 
   
 
-  const defaultIntStyle= createStyle("defaultint","default",null,null,"0");
-  const defaultFloatStyle= createStyle("defaultfloat","default",null,null,"0.00");
-  const defaultDateStyle= createStyle("defaultdate","default",null,null,"yyyy-mm-dd");
+  const defaultIntStyle= createStyle("normalint","normal",null,null,"0");
+  const defaultFloatStyle= createStyle("normalfloat","normal",null,null,"0.00");
+  const defaultDateStyle= createStyle("normaldate","normal",null,null,"yyyy-mm-dd");
   const zebraIntStyle= createStyle("zebraint","zebra",null,null,"0");
   const zebraFloatStyle= createStyle("zebrafloat","zebra",null,null,"0.00");
   const zebraDateStyle= createStyle("zebradate","zebra",null,null,"yyyy-mm-dd");
   const zebraStyle= createStyle("zebra",null,defaultFontStyles,zebraInteriorStyles,null,null,defaultBorder);
-  const defaultStyle= createStyle("default",null,defaultFontStyles,defaultInteriorStyles,null,null,defaultBorder);
+  const defaultStyle= createStyle("normal",null,defaultFontStyles,defaultInteriorStyles,null,null,defaultBorder);
   const groupSeparatorStyle= createStyle("groupSeparator",null,null,groupSeperatorInteriorStyles);
   const titleStyle= createStyle("title",null,titleFontStyles,titleInteriorStyles,"@",titleAlignmentStyles,titleBorder);
   const normalStyle= createStyle("Default",null,normalFontStyles,titleInteriorStyles,"empty",normalAlignmentStyles,titleBorder,true,"Normal");
@@ -86,8 +86,8 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
   if(header){
     
   const headerBorder={
-    type:["Top","Bottom","Right"],
-    styles:{color:"#00FF00",Top:{color:"#FF0000",weight:"100"}},
+    type:["Top","Bottom","Right","Left"],
+    styles:{color:"#00FF00",Top:{color:"#FF0000",weight:"1"}},
   }
   const headerFontStyles = {
     name:stylesInp.headerStyle.fontName,

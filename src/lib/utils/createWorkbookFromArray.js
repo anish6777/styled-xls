@@ -26,7 +26,7 @@ function createWorkbookFromArr(inp, title,addStyle) {
 
   let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml);
   for (let i=0; i < inp.length; i++) {
-      let styleName = (i%2 === 1) ? 'zebra' : 'default';
+      let styleName = (i%2 === 1) ? 'zebra' : 'normal';
       let currentRow = inp[i];
       if(currentRow.style){
         addStyle("row"+i,currentRow.style);

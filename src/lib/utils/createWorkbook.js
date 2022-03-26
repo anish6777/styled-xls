@@ -53,10 +53,10 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
       if(typeof eh === "object"){
         const firstRowStyles =eh.style;//{color:"#000000",fontColor:"#FFFFFF"}
         addStyle("firstRow"+i,firstRowStyles);
-        const firstRowXml = createRowFromArray(eh.elements,eh.style ? ("firstRow"+i):"default",addStyle);
+        const firstRowXml = createRowFromArray(eh.elements,eh.style ? ("firstRow"+i):"normal",addStyle);
         headerXml = firstRowXml+headerXml;
       }else{
-        const firstRowXml = createRowFromArray(eh,"default",addStyle);
+        const firstRowXml = createRowFromArray(eh,"normal",addStyle);
         headerXml = firstRowXml+headerXml;
       }
 
@@ -73,7 +73,7 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
   let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml,headerXml);
 
   for (let i=0; i < inp.length; i++) {
-      let styleName = (i%2 === 1) ? 'zebra' : 'default';
+      let styleName = (i%2 === 1) ? 'zebra' : "normal";
       let currentRow = inp[i];
       const newRow = createRowFromObject(currentRow,headers,styleName)
       worksheet += newRow;
@@ -82,7 +82,7 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
   if(lastRow && lastRow.elements){
     const lastRowStyles =lastRow.style;//{color:"#000000",fontColor:"#FFFFFF"}
     addStyle("lastRow",lastRowStyles);
-    const lastRowXml = createRowFromArray(lastRow.elements,lastRow.style ? "lastRow":"default",addStyle);
+    const lastRowXml = createRowFromArray(lastRow.elements,lastRow.style ? "lastRow":"normal",addStyle);
     worksheet += lastRowXml;
   }
   sheet.xml = worksheet+worksheetFooter;
