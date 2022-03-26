@@ -70,7 +70,7 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
   const groupSeparatorStyle= createStyle("groupSeparator",null,null,groupSeperatorInteriorStyles);
   const titleStyle= createStyle("title",null,titleFontStyles,titleInteriorStyles,"@",titleAlignmentStyles,titleBorder);
   const normalStyle= createStyle("Default",null,normalFontStyles,titleInteriorStyles,"empty",normalAlignmentStyles,titleBorder,true,"Normal");
-  const allStyles = [...normalStyle,
+  const allStyles = [
     ...normalStyle,
     ...titleStyle,
     ...defaultStyle,
