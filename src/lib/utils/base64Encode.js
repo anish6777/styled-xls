@@ -59,4 +59,4 @@ const Base64 = {
   }
 }
 
-export default Base64.encode;
+export default Base64;
