@@ -1,6 +1,6 @@
 # styled-xls
 
-JS library to create xls with style.
+JS library to create Open XML with style which can be saved as XLS.
 
 A 14KB JS library which helps to create Open XML files with styles which can be saved as XLS.
 
@@ -15,13 +15,13 @@ It has mainly four functions
 
 `npm install styled-xls --save`
 
-# Creating XLSX file from object array
+# Creating XML file from object array
 
 We will see how we can create a XML file as below from an object array of shape [{"key1":"value1","key2":"value2"}]
 
 ![alt text](https://github.com/anish6777/styled-xls/blob/images/images/createObjectFromArray.JPG?raw=true)
 
-## Step 1 : create a simple XLSX file download
+## Step 1 : create a simple XML file and download it as XLS
 
 ```
 import { createFromObjectArray } from "styled-xls";
@@ -98,7 +98,7 @@ const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutri
 //Rest of the code same as in step 3
 ```
 
-# Creating XLSX file from two dimensional array
+# Creating XML file from two dimensional array
 
 We will see how we can create a XML file as below from a two dimensional array
 
