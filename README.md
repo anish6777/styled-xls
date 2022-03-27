@@ -2,22 +2,22 @@
 
 JS library to create xls with style.
 
-A 14KB JS library which helps to create XLSX files with styles.
+A 14KB JS library which helps to create Open XML files with styles which can be saved as XLS.
 
 It has mainly four functions
 
-- createFromObjectArray - to convert object arrays directly to xls
-- createBook - to convert two dimensional arrays to xls file
-- createFromObjectArrayURI - to convert object arrays directly to xls dataURI
-- createBookURI - to convert two dimensional arrays to xls dataURI
+- createFromObjectArray - to convert object arrays directly to XML
+- createBook - to convert two dimensional arrays to XML file
+- createFromObjectArrayURI - to convert object arrays directly to XML dataURI
+- createBookURI - to convert two dimensional arrays to XML dataURI
 
 # Installation and Setup Instructions
 
-`npm install styled-xls xml-js --save`
+`npm install styled-xls --save`
 
 # Creating XLSX file from object array
 
-We will see how we can create an XLSX file as below from an object array of shape [{"key1":"value1","key2":"value2"}]
+We will see how we can create a XML file as below from an object array of shape [{"key1":"value1","key2":"value2"}]
 
 ![alt text](https://github.com/anish6777/styled-xls/blob/images/images/createObjectFromArray.JPG?raw=true)
 
@@ -100,7 +100,7 @@ const malnutritionBook = createFromObjectArray("malnutrition_2020",childMalnutri
 
 # Creating XLSX file from two dimensional array
 
-We will see how we can create an XLSX file as below from a two dimensional array
+We will see how we can create a XML file as below from a two dimensional array
 
 ![alt text](https://github.com/anish6777/styled-xls/blob/images/images/createBook.JPG?raw=true)
 

@@ -6,8 +6,8 @@ function createFromObjectArray(title,data,style,columnConfig,extraHeaders,lastRo
   const book =createsheet(title,data,style,columnConfig,extraHeaders,lastRow);
   let uri = 'data:application/vnd.ms-excel;base64,'
   let base64String = base64.encode(book);
-  const blob = dataURItoBlob(uri+base64String);
-  return blob;
+  const blob = dataURItoBlob(uri+base64String,"application/vnd.ms-excel;base64");
+  return {blob,book,dataURI:base64String};
   }
 
 export default createFromObjectArray;
