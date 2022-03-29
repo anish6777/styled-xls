@@ -7,7 +7,11 @@ function createRowFromObject(currentRow,headers,styleName){
             const currentValue = currentRow[currentColumn.key];
             if (currentColumn.type) {
                if(currentColumn.type == 'formula'){
-                rowXml += '<Cell ss:StyleID="' + (currentColumn.columnStyle? ((currentColumn.key||"")+"ColumnCell"):styleName) + currentColumn.outputType + '" ss:Formula="'+(currentValue||currentColumn.formula||"")+'"><Data ss:Type="' + "Formula" + '">';
+                let dataType ="String";
+                if(currentColumn.outputType && (currentColumn.outputType === "float"||currentColumn.outputType === "int")){
+                  dataType = "Number";
+                }
+                rowXml += '<Cell ss:StyleID="' + (currentColumn.columnStyle? ((currentColumn.key||"")+"ColumnCell"):styleName) + currentColumn.outputType + '" ss:Formula="'+(currentValue||currentColumn.formula||"")+'"><Data ss:Type="' + dataType + '">';
                 }
                 else if(currentColumn.type == 'float') {
                   rowXml += '<Cell ss:StyleID="' + (currentColumn.columnStyle? ((currentColumn.key||"")+"ColumnCell"):styleName)  + "float" + '"><Data ss:Type="' +"Number" + '">';

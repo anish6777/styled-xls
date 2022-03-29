@@ -23,7 +23,6 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
             } 
   
             if (currentHeader.displayName === "") {
-              visibleColumnCount--;
             } else {
                 colXml += '<Column ss:AutoFitWidth="1" ss:Width="' + width + '" />';
                 headerXml += `<Cell ss:StyleID="${currentHeader.headerStyle ? (currentHeader.key||"")+"ColumnHeader":"headercell"}">` +
@@ -34,6 +33,7 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
     }
   }else if(inp && Array.isArray(inp) && inp.length > 0){
     const keys = Object.keys(inp[0]);
+    visibleColumnCount=keys.length;
     for (let i = 0; i < keys.length; i++) {
       const currentHeader = keys[i];
         if (currentHeader){
@@ -69,6 +69,13 @@ function createWorkbook(inp, title,headers,addStyle,lastRow,extraHeaders) {
   };
 
   let numGridRows =  inp.length + 2;
+  if(lastRow){
+    numGridRows++
+  }
+
+  if(extraHeaders){
+    numGridRows = numGridRows + extraHeaders.length;
+  }
 
   let worksheet = createWorksheetHeader(title,visibleColumnCount,numGridRows,colXml,headerXml);
 

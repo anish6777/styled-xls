@@ -11,6 +11,10 @@ It has mainly four functions
 - createFromObjectArrayURI - to convert object arrays directly to XML dataURI
 - createBookURI - to convert two dimensional arrays to XML dataURI
 
+# Codepen sample
+
+[Sample 1](https://codepen.io/anish-antony/pen/zYpwpRv)
+
 # Installation and Setup Instructions
 
 `npm install styled-xls --save`

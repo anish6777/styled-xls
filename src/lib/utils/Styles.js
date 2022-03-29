@@ -1,4 +1,5 @@
 import createStyle from "./Style";
+import capitalizeFirstletter from "./capitalizeFirstletter";
 
 function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
   const defaultFontStyles={
@@ -87,7 +88,7 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
     
   const headerBorder={
     type:["Top","Bottom","Right","Left"],
-    styles:{color:"#00FF00",Top:{color:"#FF0000",weight:"1"}},
+    styles:{color:stylesInp.headerStyle.borderColor||"#000000"}
   }
   const headerFontStyles = {
     name:stylesInp.headerStyle.fontName,
@@ -105,7 +106,7 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
 
   
   const headerAlignment={
-    horizontal:stylesInp.headerStyle.horizontalAlignment||"Center",
+    horizontal:stylesInp.headerStyle.horizontalAlignment? capitalizeFirstletter(stylesInp.headerStyle.horizontalAlignment):null,
     wrapText:stylesInp.headerStyle.wrapText||"1",
   }
     const headerStyle= createStyle("headercell",null,headerFontStyles,headerInteriorStyles,null,headerAlignment,headerBorder);
@@ -131,8 +132,8 @@ function createStyles(stylesInp={defaultStyle:{},headerStyle:{}},header=true){
 
     
   const newAlignmentStyles={
-    vertical:newStyles.verticalAlignment,
-    horizontal:newStyles.horizontalAlignment,
+    vertical:newStyles.verticalAlignment ? capitalizeFirstletter(newStyles.verticalAlignment):null,
+    horizontal:newStyles.horizontalAlignment  ? capitalizeFirstletter(newStyles.horizontalAlignment):null,
     wrapText:newStyles.wrapText,
   }
     

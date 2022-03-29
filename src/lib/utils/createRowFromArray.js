@@ -13,7 +13,11 @@ function createRowFromArray(currentRow,styleName,addStyle,rowSpan=0){
       const currentValue = currentColumn.element;
           if (currentColumn.type) {
              if(currentColumn.type == 'formula'){
-              rowXml += '<Cell ss:MergeDown="'+(currentColumn.rowSpan||rowSpan||"0")+'" ss:MergeAcross="'+(currentColumn.columnSpan||"0")+'" ss:StyleID="' +  (currentColumn.style? columnStyleName:styleName) +currentColumn.outputType + '" ss:Formula="'+(currentValue||currentColumn.formula||"")+'"><Data ss:Type="' + "Formula" + '">';
+              let dataType ="String";
+              if(currentColumn.outputType && (currentColumn.outputType === "float"||currentColumn.outputType === "int")){
+                dataType = "Number";
+              }
+              rowXml += '<Cell ss:MergeDown="'+(currentColumn.rowSpan||rowSpan||"0")+'" ss:MergeAcross="'+(currentColumn.columnSpan||"0")+'" ss:StyleID="' +  (currentColumn.style? columnStyleName:styleName) +currentColumn.outputType + '" ss:Formula="'+(currentValue||currentColumn.formula||"")+'"><Data ss:Type="' + dataType + '">';
               }
               else if(currentColumn.type == 'float') {
                 rowXml += '<Cell ss:MergeDown="'+(currentColumn.rowSpan||rowSpan||"0")+'" ss:MergeAcross="'+(currentColumn.columnSpan||"0")+'" ss:StyleID="' +  (currentColumn.style? columnStyleName:styleName)  + "float" + '"><Data ss:Type="' +"Number" + '">';
