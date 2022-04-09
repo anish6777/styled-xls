@@ -2,6 +2,9 @@
 
 JS library to create Open XML with style which can be saved as XLS.
 
+This library create XML files which can be downloaded as XLS. To create XLSX files directly use the library styled-xl.
+[styled-xl](https://www.npmjs.com/package/styled-xl)
+
 A 14KB JS library which helps to create Open XML files with styles which can be saved as XLS.
 
 It has mainly four functions
@@ -10,6 +13,8 @@ It has mainly four functions
 - createBook - to convert two dimensional arrays to XML file
 - createFromObjectArrayURI - to convert object arrays directly to XML dataURI
 - createBookURI - to convert two dimensional arrays to XML dataURI
+
+Note: In excel a warning will popup when we open the file as we are saving xml file with an xls extension. Also enable editing in excel for formulas to work
 
 # Codepen sample
 
